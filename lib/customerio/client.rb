@@ -5,7 +5,7 @@ module Customerio
   class Client
     include HTTParty
     base_uri 'https://track.customer.io'
-    default_timeout 5
+    default_timeout 15
 
     class MissingIdAttributeError < RuntimeError; end
     class InvalidResponse < RuntimeError; end
